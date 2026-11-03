@@ -62,6 +62,7 @@
 .replay-page .vision-section { padding:110px 0; background:#112e3e; color:white; text-align:center; position:relative; overflow:hidden; }
 .replay-page .vision-section::before { content:""; position:absolute; width:450px; height:450px; border-radius:50%; background:#1a93b6; filter:blur(130px); opacity:.2; top:-240px; right:-40px; }
 .replay-page .vision-inner { position:relative; }
+.replay-page .vision-mark { display:block; width:140px; height:auto; margin:0 auto 14px; filter:drop-shadow(0 0 25px #17b9c055); }
 .replay-page .vision-section .section-kicker { color:#81dbe7; }
 .replay-page .vision-section h2 span { color:#8de1de; }
 .replay-page .vision-section p:not(.section-kicker) { max-width:690px; margin:26px auto; color:#d4e4ea; font-size:1.12rem; line-height:1.8; }
