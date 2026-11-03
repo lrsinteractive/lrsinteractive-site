@@ -3,9 +3,9 @@
 .replay-page a { transition:background-color .2s ease,color .2s ease,transform .2s ease; }
 .replay-page .container { width:min(1160px,calc(100% - 44px)); }
 .replay-page .site-header { position:relative; z-index:5; background:rgba(255,255,255,.96); }
-.replay-page .nav { min-height:82px; }
+.replay-page .nav { min-height:90px; }
 .replay-page .brand { display:inline-flex; gap:7px; align-items:center; color:#153b50; text-decoration:none; font-weight:850; font-style:italic; font-size:1.65rem; letter-spacing:-.065em; }
-.replay-page .brand-symbol { display:block; width:66px; height:60px; object-fit:contain; flex-shrink:0; background:transparent; border:0; border-radius:0; box-shadow:none; }
+.replay-page .brand-symbol { display:block; width:84px; height:77px; object-fit:contain; flex-shrink:0; background:transparent; border:0; border-radius:0; box-shadow:none; }
 .replay-page .brand-period { color:#f3a72d; }
 .replay-page .nav nav { align-items:center; }
 .replay-page .nav nav a { font-size:.92rem; }
@@ -110,7 +110,7 @@
 @media(max-width:430px) {
   .replay-page .container { width:calc(100% - 32px); }
   .replay-page .brand { font-size:1.4rem; }
-  .replay-page .brand-symbol { display:block; width:66px; height:60px; object-fit:contain; flex-shrink:0; background:transparent; border:0; border-radius:0; box-shadow:none; }
+  .replay-page .brand-symbol { width:62px; height:57px; }
   .replay-page .nav nav a { font-size:.78rem; }
   .replay-page .nav-download { padding:8px 11px; }
   .replay-page .hero-actions { align-items:stretch; flex-direction:column; }
@@ -119,3 +119,47 @@
   .replay-page .hero-lead { font-size:1.04rem; }
 }
 @media(prefers-reduced-motion:reduce) { .replay-page a { transition:none; } }
+
+
+/* Small, low-contrast color flecks inspired by Replay's gradient sync mark.
+   These CSS-only accents sit behind content and never cover text or controls. */
+.replay-page .replay-hero,
+.replay-page .replay-section,
+.replay-page .cta-section { position:relative; isolation:isolate; }
+.replay-page .replay-hero::before,
+.replay-page .replay-section::before,
+.replay-page .cta-section::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.26;
+  background-image:
+    radial-gradient(circle at center,#0eb8e7 0 4px,transparent 5px),
+    radial-gradient(circle at center,#287ff0 0 2px,transparent 3px),
+    radial-gradient(circle at center,#06bddd 0 7px,transparent 8px),
+    radial-gradient(circle at center,#24bf83 0 3px,transparent 4px),
+    radial-gradient(circle at center,#b3d91e 0 2px,transparent 3px),
+    radial-gradient(circle at center,#f1bd19 0 5px,transparent 6px),
+    radial-gradient(circle at center,#ee8a1f 0 2px,transparent 3px),
+    radial-gradient(circle at center,#fa6750 0 4px,transparent 5px),
+    radial-gradient(circle at center,#148dda 0 2px,transparent 3px),
+    radial-gradient(circle at center,#47cb91 0 3px,transparent 4px),
+    radial-gradient(circle at center,#e8ae32 0 2px,transparent 3px),
+    radial-gradient(circle at center,#f26b43 0 3px,transparent 4px);
+  background-repeat:no-repeat;
+  background-size:18px 18px,12px 12px,28px 28px,16px 16px,12px 12px,22px 22px,12px 12px,18px 18px,12px 12px,16px 16px,12px 12px,16px 16px;
+  background-position:4% 15%,8% 23%,2% 32%,11% 64%,7% 72%,95% 18%,91% 27%,97% 48%,92% 61%,96% 72%,88% 83%,94% 88%;
+}
+.replay-page .replay-hero > .container,
+.replay-page .replay-section > .container,
+.replay-page .cta-section > .container { position:relative; z-index:1; }
+.replay-page .replay-section::before { opacity:.17; transform:scaleX(-1); }
+.replay-page .cta-section::before { opacity:.19; }
+
+@media (max-width:760px) {
+  .replay-page .replay-hero::before,
+  .replay-page .replay-section::before,
+  .replay-page .cta-section::before { opacity:.13; }
+}
