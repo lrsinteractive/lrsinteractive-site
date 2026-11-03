@@ -3,57 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Replay: Save & Watch Later | LRS Interactive LLC</title>
-  <meta name="description" content="Replay helps you save and organize content shared from other apps.">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Replay brings the videos, links, recipes, and discoveries you want to keep into one place. Save from your favorite apps, organize collections, and share with friends.">
+  <meta property="og:title" content="Replay — Everything worth keeping. One place.">
+  <meta property="og:description" content="Save from anywhere. Organize in collections. Share with people who matter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lrsinteractive.co/replay/">
+  <title>Replay — Everything worth keeping. One place.</title>
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="replay.css">
 </head>
-<body>
+<body class="replay-page">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="../">LRS Interactive</a>
-      <nav>
-        <a href="./">Replay</a>
+      <a class="brand" href="./" aria-label="Replay home">
+        <span class="brand-symbol" aria-hidden="true">↪</span><span>replay<span class="brand-period">.</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#sharing">Share</a>
         <a href="support/">Support</a>
-        <a href="privacy/">Privacy</a>
+        <a class="nav-download" href="https://apps.apple.com/us/app/replay-save-watch-later/id6756498810">Get Replay <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero container">
-      <p class="eyebrow">Replay</p>
-      <h1>Save what you want to watch later.</h1>
-      <p class="lead">
-        Replay helps you collect and organize videos, links, and posts shared from other apps.
-      </p>
+  <main id="main">
+    <section class="replay-hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="replay-kicker"><span class="live-dot" aria-hidden="true"></span> AVAILABLE ON iOS</p>
+          <h1>Everything worth keeping. <span>One place.</span></h1>
+          <p class="hero-lead">Save videos, recipes, links, and great finds from the apps you already use. Organize them into collections. Share the good stuff with people who matter.</p>
+          <div class="hero-actions">
+            <a class="replay-button primary-button" href="https://apps.apple.com/us/app/replay-save-watch-later/id6756498810" aria-label="Download Replay on the App Store"><span aria-hidden="true">●</span> Download on the App Store <span aria-hidden="true">↗</span></a>
+            <a class="replay-button secondary-button" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-footnote">Free to download · Built for iPhone and iPad</p>
+        </div>
+        <div class="hero-visual" aria-label="Screenshots showing Replay's Shared and Sorted views">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <img class="phone phone-shared" src="../shared.png" alt="Replay Shared inbox showing saved videos from other apps" width="395" height="853">
+          <img class="phone phone-sorted" src="../sorted.png" alt="Replay Sorted view showing custom collections including Funny, Mystery, and Favorites" width="378" height="853">
+        </div>
+      </div>
     </section>
 
-    <section class="container card-grid">
-      <article class="card">
-        <h2>Organize your saved links</h2>
-        <p>
-          Keep newly shared items in one place, then sort them into collections when you are ready.
-        </p>
-      </article>
+    <section class="benefit-strip" aria-label="Replay at a glance">
+      <div class="container benefits">
+        <span>ONE PLACE FOR YOUR FAVORITES</span><span aria-hidden="true">✦</span>
+        <span>COLLECTIONS THAT MAKE SENSE</span><span aria-hidden="true">✦</span>
+        <span>BETTER WHEN SHARED</span>
+      </div>
+    </section>
 
-      <article class="card">
-        <h2>Support and privacy</h2>
-        <p>
-          Need help or want to review Replay’s privacy information?
-        </p>
-        <a class="button" href="support/">Get support</a>
-      </article>
+    <section class="replay-section" id="how-it-works">
+      <div class="container">
+        <p class="section-kicker">THE SIMPLE IDEA</p>
+        <div class="section-heading">
+          <h2>See it. Save it.<br><span>Come back to it.</span></h2>
+          <p>Great content shows up everywhere. Replay gives it a home you can actually find again.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon cyan" aria-hidden="true">↗</div>
+            <p class="feature-number">01 / SAVE</p>
+            <h3>Save from your apps</h3>
+            <p>Share a video, post, or link to Replay from supported apps instead of losing it in a feed, message thread, or bookmark list.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon green" aria-hidden="true">▦</div>
+            <p class="feature-number">02 / ORGANIZE</p>
+            <h3>Make it yours</h3>
+            <p>Keep new saves in one place, then sort them into collections for recipes, things to watch, travel ideas, or whatever you love.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon orange" aria-hidden="true">♡</div>
+            <p class="feature-number">03 / SHARE</p>
+            <h3>Bring people in</h3>
+            <p>Invite other Replay users into shared collections to collect ideas, recommendations, and favorite finds together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlight-section" id="sharing">
+      <div class="container spotlight">
+        <div class="spotlight-art">
+          <div class="spotlight-ring" aria-hidden="true"></div>
+          <img src="../sorted.png" alt="A collection library in Replay with custom categories and a shared collection" loading="lazy" width="378" height="853">
+        </div>
+        <div class="spotlight-copy">
+          <p class="section-kicker">MADE TO COLLECT. BUILT TO CONNECT.</p>
+          <h2>Good finds are better together.</h2>
+          <p>Your next favorite recipe, funny clip, or must-see destination might come from a friend. Shared collections make it easy to save those discoveries in the same place.</p>
+          <ul class="tick-list">
+            <li>Create collections for just about anything</li>
+            <li>Invite others to collaborate</li>
+            <li>Keep your saved finds organized across devices with optional sign-in</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-section">
+      <div class="container vision-inner">
+        <img class="vision-mark" src="../logo.png" alt="" width="1311" height="1200" loading="lazy">
+        <p class="section-kicker">WHERE WE'RE HEADED</p>
+        <h2>People first.<br><span>Algorithms second.</span></h2>
+        <p>We believe the best discoveries come from people you trust. Today, Replay makes it easy to save and share. Our vision is to make finding great content through people just as natural.</p>
+        <div class="vision-label">A vision for the future of Replay</div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div>
+          <p class="section-kicker">READY TO GET ORGANIZED?</p>
+          <h2>Keep what matters.<br>Replay it later.</h2>
+          <p>Start building your own collection of everything worth keeping.</p>
+        </div>
+        <a class="replay-button primary-button" href="https://apps.apple.com/us/app/replay-save-watch-later/id6756498810">Get Replay on the App Store <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> LRS Interactive LLC. All rights reserved.</p>
+  <footer class="site-footer replay-footer">
+    <div class="container footer-content">
+      <div><strong>Replay</strong><p>Made by <a href="../">LRS Interactive LLC</a></p></div>
+      <nav aria-label="Footer navigation"><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="../">LRS Interactive</a></nav>
+      <p>© <span id="year">2026</span> LRS Interactive LLC. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
